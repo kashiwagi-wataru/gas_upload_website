@@ -2,10 +2,657 @@
 <html>
   <head>
     <base target="_top">
+    
+    <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+.heading {
+  padding-bottom: 8px;
+  font-size: 32px;
+  color: #000000;
+  padding-top: 90px;
+  text-align: center;
+}
+.border-line {
+  margin: 0 auto;
+  width: 70px;
+  border-bottom: 3px solid #EC715F;
+
+}
+.heading-text {
+
+  text-align: center;
+  padding: 30px 0;
+  font-size: 16px;
+  color: #000000;
+}
+/*header*/
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #EC715F;
+}
+
+.logo {
+  height: 70px;
+  float: left;
+}
+.nav-list {
+  float: right;
+}
+
+.nav-list-item {
+  float: left;
+  width: 120px;
+  line-height: 70px;
+  color: #FAFAFA;
+  padding :0 30px;
+  list-style: none;
+}
+.nav-list a {
+  color: #FAFAFA;
+}
+
+.mv {
+  width: 100%;
+  height: 650px;
+  text-align: center;
+  color: #FAFAFA;
+  background-size: cover;
+}
+.main-visual {
+  width: 100%;
+  height: 650px;
+  background-image:  url("https://drive.google.com/uc?id=1R6sl7wBKErmRhkp1wqoutX0hc3W8OICM");
+  background-size: cover;
+  background-position: center;
+}
+.main-visual-heading {
+  text-align: center;
+  color: #FAFAFA;
+  font-size: 64px;
+  padding-top: 200px;
+}
+.main-visual-heading-text {
+  text-align: center;
+  color: #FAFAFA;
+  font-size: 20px;
+  padding-top: 10px
+}
+/*portfolio*/
+.portfolio {
+  width: 100%;
+  height: 850px;
+  background-color: #ECEFF1
+}
+.box1 {
+  width: 920px;
+  height: 850px
+  margin-bottom 90px;
+  margin: 0 auto;
+}
+.container {
+  width: 930px;
+  margin-bottom: 90px;
+}
+.img {
+  float: right;
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+.img:nth-child(n) {
+  margin: 0 10px 10px 0;
+}
+.img:nth-child(1) {
+  background-image: url("https://drive.google.com/uc?id=1Zp5Zxg9TtAEgNbWRto03ncJX-4osHjGI");
+}
+.img:nth-child(2) {
+  background-image: url("https://drive.google.com/uc?id=1JPkU6nrGa_uFsz5kwcvpJoTxAlNHc-Vw");
+}
+.img:nth-child(3) {
+  background-image: url("https://drive.google.com/uc?id=1cvG_4Of8Q7TqERqEIdort0ksTNQwjxcM");
+}
+.img:nth-child(4) {
+  background-image: url("https://drive.google.com/uc?id=1Zr29DRyl2pW1vd8eEfFqbU77TFJ356o_");
+}
+.img:nth-child(5) {
+  background-image: url("https://drive.google.com/uc?id=1sWDKI5e1_juvNTeRYh5Czo2EuFceMRjf");
+}
+.img:nth-child(6) {
+  background-image: url("https://drive.google.com/uc?id=1wgf05FSdfl4MZrHNTzFwzLzd8k9yKrGL");
+}
+
+/*feature*/
+.feature {
+  margin: 0 auto;
+  width: 100%;
+  height: 700px;
+}
+
+.heading-text1 {
+  text-align: center;
+  margin: 30px 0;
+}
+.strength-under {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.social i{
+  font-size: 60px;
+}
+.strength-title {
+  margin: 10px;
+  font-size: 20px;
+  color: #000000;
+}
+.strength-left {
+  display: inline-block;
+  width: 320px;
+  height: auto;
+  margin: 30px 10px 30px 0;
+}
+.strength-center {
+  display: inline-block;
+  width: 320px;
+  height: auto;
+  margin: 30px 10px 30px 0;
+}
+.strength-right {
+  display: inline-block;
+  width: 320px;
+  height: auto;
+  margin: 30px 0 30px 0;
+}
+.strength-title {
+  text-align: center;
+}
+
+.profile {
+  margin: 0 auto;
+  width: 100%;
+  height: 600px;
+  background-color: #ECEFF1;
+}
+.box3 {
+  margin: 0 auto;
+  width: 1024px;
+  height: 600px;
+}
+.profile-left {
+  float: left;
+  width: 512px;
+  height: auto;
+  margin-bottom: 90px;
+  padding-left: 130px;
+}
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.profile-right {
+  float: left;
+  width: 512px;
+  margin-bottom: 90px;
+}
+.myname {
+  font-size: 20px;
+  margin: 30px 0 5px 0;
+}
+
+.myskill {
+  margin: 20px 0 5px 0;
+  font-size: 20px;
+}
+.contact {
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+}
+.box4 {
+  margin: 0 auto;
+  width: 800px;
+  height: 500px;
+}
+.contact-left {
+  padding-left: 150px;
+  float: left;
+  width: 400px;
+  height: 200px;
+}
+.mail {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.tell {
+  font-size: 20px;
+  padding: 20px 0 5px 0;
+}
+.contact-right {
+  float: left;
+  width: 400px;
+  height: 200px;
+}
+.sns {
+  font-size: 20px;
+  padding: 0 0 5px 100px;
+}
+.social2 {
+  padding-left: 100px;
+  font-size: 50px;
+}
+.social2 i {
+  padding-right: 10px;
+}
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #EC715F;
+}
+footer p {
+  text-align: center;
+  padding: 20px;
+  color: #FFFFFF;
+}
+
+@media(max-width: 767px){
+  .clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+  .container{
+    width: 100%;
+  }
+  .left-content{
+    float: none;
+    width: 100%;
+  }
+  .right-content{
+    float: none;
+    width: 100%;
+  }
+  header{
+    height: 50px;
+  }
+
+  .logo{
+    float: none;
+    height: 50px;
+  }
+
+  .menu-box{
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+    border: 1px solid #FAFAFA;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .list-bar{
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #FAFAFA;
+  }
+
+  .list-bar:first-child{
+    margin-top: 10px;
+  }
+
+  .nav{
+    float: none;
+  }
+
+  .nav-list{
+    display: none;
+    }
+
+  .nav-list:last-child{
+    border: none;
+  }
+ .mv {
+  width: 100%;
+  height: 650px;
+  text-align: center;
+  color: #FAFAFA;
+  background-image: url("../img/code.png");
+  background-size: cover;
+}
+.main-visual {
+  width: 100%;
+  height: 650px;
+  background-image: url(img/code.png);
+  background-size: cover;
+  background-position: center;
+}
+.main-visual-heading {
+  text-align: center;
+  color: #FAFAFA;
+  font-size: 40px;
+  padding-top: 200px;
+}
+.main-visual-heading-text {
+  text-align: center;
+  color: #FAFAFA;
+  font-size: 18px;
+  padding-top: 10px
+}
+.portfolio {
+  width: 100%;
+  height: auto;
+}
+.box1 {
+  width: 90%;
+  padding-bottom: 40px;
+}
+.box2 {
+  width: 90%;
+}
+.img {
+  float: none;
+}
+
+.feature {
+  width: 100%;
+  height: auto;
+}
+.strengh-left {
+  display: block;
+}
+.strength-center {
+  margin: 0 auto;
+  display: block;
+}
+.strength-right {
+  padding-top: 30px;
+  margin: 0 auto;
+  display: block;
+}
+.strength-text {
+  text-align: left;
+}
+.profile {
+  height: 1050px;
+}
+.box3 {
+  width: 90%;
+  height: auto;
+}
+.profile-left {
+  text-align: center;
+}
+.profile-right {
+  float: none;
+  margin: 0 auto;
+}
+.myname {
+  text-align: center;
+}
+.myname-text {
+  
+}
+
+p {
+  text-align: center;
+}
+
+
+.myskill {
+  text-align: center;
+}
+.contact creafix{
+  width: 90%;
+}
+.box4 {
+  width: 90%;
+}
+.contact-left {
+  float: none;
+}
+.contact-right {
+  float: none;
+}
+.mail {
+  padding-right: 100px;
+  text-align: center;
+}
+.mailadress {
+  padding-right: 100px;
+}
+.tell {
+  padding-right: 100px;
+  text-align: center;
+}
+.tellnumber {
+  padding-right: 100px;
+
+}
+.sns {
+  padding-right: 100px;
+  text-align: center;
+  }
+.social2 {
+  padding-right: 80px;
+  text-align: center;
+  margin: 0 auto;
+}
+.heading-text {
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-left {
+  padding-left: 100px;
+  margin: 0 auto;
+  height: 150px;
+  float: none;
+  }
+  .contact-right {
+    margin: 0 auto;
+  }
+  footer {
+    height: 60px;
+    margin-top: 90px;
+    text-align: center;
+  }
+}
+
+</style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
   </head>
   <body>
-    <h1>Hello! gas</h1>
-    
-    <img src="https://drive.google.com/uc?id=1kv9taxRq3h8pwSndjLV8vOPgla3xzfZXjQ" width="300" height="300" alt="feavertime!!!">
-  </body>
+  <!-- header -->
+<header>
+  <div class="container clearfix">
+      <a href=".mv">
+       <img class="logo" src="https://drive.google.com/uc?id=1ZvpMi9az_62oapHbiMj-GKB4axzSOCCR" alt="ロゴ">
+      </a>
+    <div class="menu-box">
+      <span class="list-bar"></span>
+      <span class="list-bar"></span>
+      <span class="list-bar"></span>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a href=".portfolio">Portfolio</a>
+        </li>
+        <li class="nav-list-item">
+          <a href=".featue">Feature</a>
+        </li>
+        <li class="nav-list-item">
+          <a href=".profile">Profile</a>
+        </li>
+        <li class="nav-list-item">
+          <a href=".contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+</header>
+<!-- MainVisual -->
+<div class="main-visual">
+ 
+  <div class="main-visual-content">
+    <h1 class="main-visual-heading">Lorem Ipsum</h1>
+    <h3 class="main-visual-heading-text">simply dummy text of the printing</h3>
+  </div>
+</div>
+<!-- Portfolio -->
+<div class="portfolio creafix">
+  <div class="box1">
+   <h1 class="heading">Portfolio</h1>
+   <div class=border-line></div>
+   <p class="heading-text">
+    It is a long established fact that a reader will be distracted by the readable <br>
+    content of a page when looking at its layout. <br>
+    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+   </p>
+   <div class="container creafix">
+     <div class="img"></div>
+     <div class="img"></div>
+     <div class="img"></div>
+     <div class="img"></div>
+     <div class="img"></div>
+     <div class="img"></div>
+   </div>
+ </div>
+</div>
+<!-- Feature -->
+<div class="feature creafix">
+  <h1 class="heading">Feature</h1>
+  <div class=border-line></div>
+  <p class="heading-text1">
+    It is a long established fact that a reader will be distracted by the readable <br>
+    content of a page when looking at its layout. <br>
+    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+  </p>
+  <div class="strength-under">
+  <div class="social">
+  <div class="strength-left">
+  <i class="fas fa-align-left"></i>
+  <h3 class="strength-title">Strength1</h3>
+  <p class="strength-text">
+    Contrary to popular belief, Lorem Ipsum <br>
+    is not simply random text. It has roots <br>
+    in a piece of classical Latin literature <br>
+    from 45 BC, making it over 2000 years <br>
+    old. Richard McClintock, a Latin <br>
+    professor at Hampden-Sydney College <br>
+    in Virginia, looked up one of the more <br>
+    obscure Latin words, consectetur
+  </p>
+  </div>
+  <div class="strength-center">
+  <i class="fas fa-align-center"></i>
+  <h3 class="strength-title">Strength2</h3>
+   <p class="strength-text">
+    Contrary to popular belief, Lorem Ipsum <br>
+    is not simply random text. It has roots <br>
+    in a piece of classical Latin literature <br>
+    from 45 BC, making it over 2000 years <br>
+    old. Richard McClintock, a Latin <br>
+    professor at Hampden-Sydney College <br>
+    in Virginia, looked up one of the more <br>
+    obscure Latin words, consectetur
+  </p>
+  </div>
+  <div class="strength-right">
+  <i class="fas fa-align-right"></i>
+  <h3 class="strength-title">Strength3</h3>
+   <p class="strength-text">
+    Contrary to popular belief, Lorem Ipsum <br>
+    is not simply random text. It has roots <br>
+    in a piece of classical Latin literature <br>
+    from 45 BC, making it over 2000 years <br>
+    old. Richard McClintock, a Latin <br>
+    professor at Hampden-Sydney College <br>
+    in Virginia, looked up one of the more <br>
+    obscure Latin words, consectetur
+   </p>
+ </div>
+ </div>
+</div>
+<!-- profile -->
+<div class="profile creafix">
+  <div class="box3">
+  <h1 class="heading">Profile</h1>
+  <div class=border-line></div>
+  <p class="heading-text">
+    It is a long established fact that a reader will be distracted by the readable <br>
+    content of a page when looking at its layout. <br>
+    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+  </p>
+  <div class="profile-left">
+      <img class="profile-image" src="https://drive.google.com/uc?id=1bEpu1gPN8-wTM2EFWwvnUT_nGDRzr4q2"> 
+  </div>
+  <div class="profile-right">
+    <h3 class="myname">MyName</h3>
+    <p class="myname-text">
+      Contrary to popular belief, Lorem Ipsum is not simply random <br>
+      text. It has roots in a piece of classical Latin literature from 45 <br>
+      BC, making it over 2000 years old. Richard McClintock, a Latin <br>
+      professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
+    </p>
+    <h3 class="myskill">MySkills</h3>
+    <p>HTML/CSSJavaScript/jQuery/PhotoShop</p>
+  </div>
+</div>
+</div>
+<!-- Contact -->
+<div class="contact creafix">
+  <div class="box4">
+  <h1 class="heading">Contact</h1>
+  <div class=border-line></div>
+  <p class="heading-text">
+    It is a long established fact that a reader will be distracted by the readable <br>
+    content of a page when looking at its layout. <br>
+    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of 
+  </p>
+  <div class="contact-left">
+    <h3 class="mail">Mail</h3>
+    <p class="mailadress">XXX@XXX.com</p>
+    <h3 class="tell">Tell</h3>
+    <p class="tellnumber">000-0000-0000</p>
+  </div>
+  <div class="contact-right">
+    <h3 class="sns">SNS</h3>
+    <div class="social2">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+  </div>
+  </div>
+</div>
+<!-- footer -->
+  <footer>
+    <p>©2017 Webcamp</p>
+  </footer>
+ </body>
 </html>
